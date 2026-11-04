@@ -88,20 +88,18 @@ a{color:#3f4c55}a:hover{color:#252d32}
 .km-key{color:var(--ink-2-strong)}.km-key i{background:var(--accent)}.km-key i.hq{background:var(--surface-dark)}
 /* 28.10.: Miksi GRK vaalean harmaalle, ettei kahta valkoista osiota (kartta) tule peräkkäin */
 .hf.lofi #miksi-grk.b-why{background:var(--surface)}
-/* Palvelukartta 28.10. (Olli: "vertikaaliset viivat samalla etäisyydellä", ei merkkejä keskelle nurmea): kuva skaalataan niin,
-   että vyöhykkeiden väli (15,05 % kuvasta) on sama kuin hakemiston sarakkeiden väli, ja siirretään niin, että sarakkeen piste osuu
-   vyöhykkeen samaan kohtaan. Merkit ovat laatan etureunalla vyöhykkeensä kohteen edessä; viiva laskeutuu suoraan sarakkeen pisteeseen. */
+/* Palvelukartta 4.11. (Olli): GRK Eestin oma kuva palvelukartta-patukka-ee-8-tasainen, neljä vyöhykettä valikon järjestyksessä
+   (Teedeehitus, Sillad ja viaduktid, Raudtee-ehitus, Raudtee elektrifitseerimine). Laatta täyttää sisältöleveyden, merkit ovat
+   vyöhykkeen etureunalla samalla etäisyydellä keskeltä ja viiva kulkee merkistä pystyyn, vinoon GRK:n kulmassa (50 astetta) ja
+   pystyyn sarakkeen palloon. Merkki = sarakkeen piste + vakio, joten kaikki vinot ovat yhtä pitkiä ja samansuuntaisia (FI:n sääntö);
+   merkit liukuvat vyöhykkeensä etureunaa pitkin (vakiot ee_palvelukartta.py:stä geo.jsonin mukaan). */
 @media (min-width:901px){
-/* 28.10. ilta: 8 asteen kuva (Olli: matalampi), laatta sisältöalueen marginaaleihin, vyöhykeväli = hakemiston sarakeväli */
-.b-svcmap--tasa .b-svcmap__fig{width:calc(100cqw * 1.025796);max-width:none;margin-left:calc(100cqw * -0.012590)}
+.b-svcmap--tasa .b-svcmap__fig{width:calc(100cqw * 1.036134);max-width:none;margin-left:calc(100cqw * -0.018067)}
 .b-svcmap--tasa{grid-template-columns:minmax(0,1fr)}
-.b-svcmap--tasa .b-svcmap__index--row{width:100cqw;max-width:none;margin-left:0;grid-template-columns:repeat(4,minmax(0,1fr));column-gap:24px} /* EE 4.11.: neljä palvelua, neljä tasaleveää saraketta koko leveydelle (FI:ssä kuusi) */
-/* 28.10. ilta (Olli): hakemisto tasattu vasempaan reunaan; viivat merkistä sarakkeen palloon GRK:n vinossa kulmassa
-   (pysty, vino 50° vaakatasosta, kuten kirjaston b-svcmap__lead, multisite/hifi.css r. 383, pysty). Sarakeväli = vyöhykeväli,
-   joten kaikki vinot ovat yhtä pitkiä ja samansuuntaisia. */
-.b-svcmap--tasa .b-svcmap__lead{--fh:calc(100cqw * 0.337587);--px2:calc(100cqw * 0.060128 + var(--z) * 100cqw * 0.154648);--dx:calc(var(--px2) - var(--c) * (100cqw + 24px) / 4 - var(--dot,13px));--adx:max(var(--dx),calc(var(--dx) * -1));--dd:calc(var(--adx) * 1.1918);--ye:calc(var(--fh) + 64px - 18px);--ys:calc(var(--ye) - var(--dd))} /* EE: --z = kuvan vyöhyke (0-5), --c = hakemiston sarake (0-3) */
+.b-svcmap--tasa .b-svcmap__index--row{width:100cqw;max-width:none;margin-left:0;grid-template-columns:repeat(4,minmax(0,1fr));column-gap:24px}
+.b-svcmap--tasa .b-svcmap__lead{--fh:calc(100cqw * 0.425327);--px2:calc(100cqw * 0.035781 + var(--c) * (100cqw * .25 + 6px));--dx:calc(100cqw * 0.035781 - var(--dot,13px));--adx:max(var(--dx),calc(var(--dx) * -1));--dd:calc(var(--adx) * 1.1918);--ye:calc(var(--fh) + 64px - 18px);--ys:calc(var(--ye) - var(--dd))}
 .b-svcmap--tasa .b-svcmap__lead::before{left:calc(var(--px2) - 1px);top:calc(var(--y) / 100 * var(--fh));height:calc(var(--ys) - var(--y) / 100 * var(--fh));border-left-width:2px}
-.b-svcmap--tasa .b-svcmap__lead::after{display:block;left:var(--px2);top:var(--ys);width:calc(var(--adx) * 1.5557);border-top-width:2px;transform-origin:0 0;transform:rotate(var(--rot,130deg))} /* --rot:50deg, kun sarakkeen piste on merkin oikealla puolella */
+.b-svcmap--tasa .b-svcmap__lead::after{display:block;left:var(--px2);top:var(--ys);width:calc(var(--adx) * 1.5557);border-top-width:2px;transform-origin:0 0;transform:rotate(var(--rot,130deg))}
 .b-svcmap--tasa .b-svcmap__lead i{display:block;left:calc(var(--px2) - var(--dx) - 1px);top:var(--ye);height:18px;border-left-width:2px}
 }
 /* Taste 22.10.: osio-H2 40 px, hierarkia painolla */
