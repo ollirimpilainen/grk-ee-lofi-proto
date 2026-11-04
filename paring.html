@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="et">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Kirjelda oma projekti · GRK Eesti lo-fi prototüüp</title>
+
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/bundle.css">
+<link rel="stylesheet" href="css/nav.css">
+<style>
+@font-face{font-family:"Lofi Head";src:url(assets/archivo.woff2) format("woff2");font-weight:700 700;font-stretch:104% 104%;font-display:swap}
+@font-face{font-family:"Lofi Sans";src:url(assets/archivo.woff2) format("woff2");font-weight:400 700;font-stretch:100% 100%;font-display:swap}
+body{margin:0;background:#fff}
+a{color:#3f4c55}a:hover{color:#252d32}
+.tp-head{display:grid;gap:20px;max-width:880px;padding:24px 80px 56px}
+.tp-head .b-lead{margin:0}
+.tp-grid{display:grid;grid-template-columns:minmax(0,8fr) minmax(0,4fr);gap:80px;align-items:start}
+.tp-grid .b-form{grid-template-columns:repeat(2,minmax(0,1fr))}
+.tp-sub{grid-column:1/-1;margin:16px 0 0;padding-top:24px;border-top:1px solid var(--line);font:900 22px/28px var(--font-head)}
+.tp-sub span{font:400 16px/24px var(--font-sans);color:var(--ink-2-strong)}
+.tp-drop{display:grid;place-items:center;gap:4px;padding:32px;border:1px dashed var(--ink-2);text-align:center;font-size:16px;line-height:24px;color:var(--ink-2-strong)}
+.tp-drop b{color:var(--ink)}
+.tp-aside{display:grid;gap:28px;padding:32px;background:var(--surface-2);position:sticky;top:24px}
+.tp-aside h2{margin:0;font:900 22px/28px var(--font-head)}
+.tp-aside .b-person__img{background:#fff}
+.tp-next{display:grid;gap:14px;margin:0;padding:0;list-style:none}
+.tp-next li{display:grid;grid-template-columns:28px 1fr;gap:8px;font-size:16px;line-height:24px}
+.tp-next b{font:900 22px/28px var(--font-head);color:var(--accent)}
+.tp-trust{display:flex;flex-wrap:wrap;gap:12px 32px;padding:24px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:14px;line-height:20px;font-weight:700}
+.tp-trust span:first-child{color:var(--ink-2-strong)}
+.tp-trust span:last-child{margin-left:auto;font-weight:400;color:var(--ink-2-strong)}
+@media (max-width:900px){.tp-head{padding:24px 20px 40px}.tp-grid,.tp-grid .b-form{grid-template-columns:1fr;gap:32px}.tp-aside{position:static}}
+/* Taste 22.10.: osio-H2 40 px, hierarkia painolla */
+.hf .b-h2{font-size:40px;line-height:48px;letter-spacing:-.01em}
+.tp-head{max-width:none}
+.tp-head .b-h1{max-width:none}
+.tp-head .b-lead{max-width:760px}
+.tp-head{padding-bottom:32px}
+/* Tyyppiasteikko 22.10. (Olli: vain määritellyt koot): H1 80/93 · H2 40/48 · H3 28/33 · H4 22/28 · H5 18/24 · leipä 16/24 ja 18/28 · pieni 14/20 · tagi 12/16 · luku 64 */
+.hf .b-h2,.hf .hf-h2{font-size:40px;line-height:48px}
+.hf .b-h3,.hf .hf-mx__t h3,.hf .hf-stack__c h3,.hf .hf-feature__tx h3,.hf .b-svccard h3,.hf .t3__c h3,.hf .pa h3{font-size:28px;line-height:33px}
+.hf .hf-card h3,.hf .b-step h3,.hf .b-why__title,.hf .hf-work__group,.hf .hf-news h3{font-size:22px;line-height:28px}
+.hf .b-why__num,.hf .why-num,.hf .hf-herostats b{font-size:64px;line-height:1}
+.hf .hf-strip h2{font-weight:900;font-size:40px;line-height:48px}
+.hf .hf-work__group{font-weight:900}
+.hf .b-person__name,.hf .me-contact b{font-size:22px;line-height:28px;font-weight:900}
+.hf .en-co__name{font-size:28px;line-height:33px}
+.hf .b-lead,.hf .lead{font-size:22px;line-height:34px}
+.hf .b-head .b-body{font-size:18px;line-height:28px}
+.hf .hf-card .meta,.hf .hf-feature .meta,.hf .hf-pins__pin{font-size:14px;line-height:20px}
+.hf .en-co__num b,.hf .b-svcmap__pin span{font-size:12px;line-height:16px}
+.hf .hf-card p:not(.meta){font-size:16px;line-height:24px}
+@media (max-width:900px){
+  .km-c{grid-template-columns:1fr!important;gap:32px!important}
+  .b-why__grid,#miksi-grk .b-why__grid{grid-template-columns:1fr 1fr!important;row-gap:40px}
+  .hf-sm,.hf-mx__b .b-method{grid-template-columns:1fr!important}
+  .t3__c>p{white-space:normal}
+}
+@media (max-width:600px){
+  .b-why__grid,#miksi-grk .b-why__grid{grid-template-columns:1fr!important}
+  .b-root :where(h1,h2,h3),.b-root :where(h1,h2,h3) a{hyphens:auto;-webkit-hyphens:auto}
+}
+
+</style>
+</head>
+<body>
+<div class="b-root hf lofi ee" style="width: 100%;">
+
+<header class="b-nav">
+  <div class="b-nav__util b-nav__util--v2"><span class="b-nav__util-r"><a href="https://ollirimpilainen.github.io/ksbr-lofi-proto/">KSBR ↗</a><a href="tyhja.html?s=Investorid">Investorid ↗</a><a href="uudised.html#meedia">Meedia</a><span class="b-nav__util-sep" aria-hidden="true"></span><a class="b-nav__util-search" href="#"><svg class="b-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>Otsing</a><a class="b-nav__country" href="#" aria-label="Riik: Eesti">Eesti</a></span></div>
+  <div class="b-nav__bar">
+    <a class="b-nav__brand" href="index.html"><img src="assets/95a040812eb54d3defb819e1e7fa2b22.svg" alt="GRK" width="99" height="32"></a>
+    <nav class="b-nav__menu" aria-label="Peamenüü">
+      <a class="b-nav__item b-nav__item--menu" href="teenused.html">Teenused</a>
+      <a class="b-nav__item" href="referentsid.html">Referentsid</a>
+      <a class="b-nav__item" href="uudised.html">Uudised</a>
+      <a class="b-nav__item b-nav__item--menu" href="grk-eesti.html">Ettevõte</a>
+      <a class="b-nav__item" href="karjaar.html">Karjäär</a>
+    </nav>
+    <a class="b-nav__contact" href="kontakt.html" aria-current="page">Kontakt</a>
+  </div>
+</header>
+<ol class="b-crumbs"><li><a href="index.html">Avaleht</a></li><li><a href="kontakt.html">Kontakt</a></li><li aria-current="page">Kirjelda oma projekti</li></ol>
+
+<header class="b-pagehead">
+  <h1 class="b-h1">Kirjelda oma projekti</h1>
+  <p class="b-lead">Kirjelda projekti ja õige valdkonna spetsialist võtab sinuga ühendust ühe tööpäeva jooksul. Ka pooleli olev plaan sobib alguseks.</p>
+</header>
+
+<section class="b-section" style="padding-top: 0;"><div class="b-inner tp-grid">
+  <form class="b-form">
+    <div class="b-field b-field--full"><label for="pr-teenus">Teenus *</label><select class="b-select" id="pr-teenus"><option>Vali</option><option>Teedeehitus</option><option>Sillad ja viaduktid</option><option>Raudtee-ehitus</option><option>Raudtee elektrifitseerimine</option><option>Kogu projekt või ei tea veel</option></select></div>
+    <div class="b-field b-field--full"><label for="pr-kirjeldus">Projekti kirjeldus *</label><textarea class="b-textarea" id="pr-kirjeldus" placeholder="Mida ehitatakse, maht ja olulisemad tingimused"></textarea></div>
+    <div class="b-field"><label for="pr-asukoht">Asukoht *</label><input class="b-input" id="pr-asukoht" type="text" placeholder="Asula või maakond"></div>
+    <div class="b-field"><label for="pr-riik">Riik</label><select class="b-select" id="pr-riik"><option>Eesti</option><option>Soome</option><option>Rootsi</option></select></div>
+    <div class="b-field"><label for="pr-nimi">Nimi *</label><input class="b-input" id="pr-nimi" type="text" autocomplete="name"></div>
+    <div class="b-field"><label for="pr-ettevote">Ettevõte või organisatsioon *</label><input class="b-input" id="pr-ettevote" type="text" autocomplete="organization"></div>
+    <div class="b-field"><label for="pr-email">E-post *</label><input class="b-input" id="pr-email" type="email" autocomplete="email"></div>
+    <div class="b-field"><label for="pr-tel">Telefon</label><input class="b-input" id="pr-tel" type="tel" autocomplete="tel"></div>
+    <p class="tp-sub">Lisainfo <span>(vabatahtlik)</span></p>
+    <div class="b-field"><label for="pr-etapp">Projekti etapp</label><select class="b-select" id="pr-etapp"><option>Vali</option><option>Projekteerimine</option><option>Hange</option><option>Ehitus</option></select></div>
+    <div class="b-field"><label for="pr-vorm">Lepinguvorm</label><select class="b-select" id="pr-vorm"><option>Ei tea veel</option><option>Ehitustöövõtt</option><option>Projekteerimis-ehitustöövõtt</option><option>Allianss</option><option>Korrashoid ja hooldus</option></select></div>
+    <div class="b-field b-field--full"><label for="pr-aeg">Ajakava</label><input class="b-input" id="pr-aeg" type="text" placeholder="Nt ehitus algab 2027. aasta kevadel"></div>
+    <div class="b-field b-field--full"><label>Manused</label><div class="tp-drop"><b>Lohista failid siia või vali failid</b>Joonised, geoloogilised uuringud ja hankedokumendid</div></div>
+    <div class="b-form__foot"><button class="b-btn" type="button">Saada päring</button><span class="b-small">Töötleme andmeid vastavalt meie <a href="tyhja.html?s=Privaatsuspoliitika">privaatsuspoliitikale</a>.</span></div>
+  </form>
+  <aside class="tp-aside">
+    <div class="b-person"><div class="b-person__img" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.5"></circle><path d="M5 20a7 7 0 0 1 14 0"></path></svg></div><div><p class="b-person__name">Tiit Roben</p><p class="b-person__role">Tegevjuht</p><p class="b-person__ch"><a href="tel:+37256805407"><svg class="b-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"></path></svg>+372 5680 5407</a><a href="mailto:tiit.roben@grk.ee"><svg class="b-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>tiit.roben@grk.ee</a></p></div></div>
+    <h2>Mis edasi saab</h2>
+    <ol class="tp-next"><li><b>1</b><span>Saad kinnituse oma e-postile.</span></li><li><b>2</b><span>Valdkonna spetsialist võtab ühendust ühe tööpäeva jooksul ja täpsustab vajalikud andmed.</span></li><li><b>3</b><span>Lepime kokku pakkumise, lepinguvormi või kohtumise.</span></li></ol>
+  </aside>
+</div></section>
+
+<section class="b-section b-section--tight" style="padding-top: 0;"><div class="b-inner"><p class="tp-trust"><span>Sertifitseeritud</span><span>ISO 9001</span><span>ISO 14001</span><span>ISO 45001</span><span>Tegutseme Eestis, Soomes ja Rootsis</span></p></div></section>
+
+<section class="b-section b-section--gray" id="kontaktisikud"><div class="b-inner">
+  <div class="b-head"><h2 class="b-h2">Projekt alles idee? Helista enne</h2><p class="b-body">Valdkondade juhid ütlevad, kas tasub kohe päring saata või arutada enne projekteerimist.</p></div>
+  <div class="b-people">
+    <div class="b-person"><div class="b-person__img" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.5"></circle><path d="M5 20a7 7 0 0 1 14 0"></path></svg></div><div><p class="b-person__name">Mario Liima</p><p class="b-person__role">Rööbasteede valdkonna juht</p><p class="b-person__ch"><a href="tel:+37256846106"><svg class="b-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"></path></svg>+372 5684 6106</a><a href="mailto:mario.liima@grk.ee"><svg class="b-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>mario.liima@grk.ee</a></p></div></div>
+    <div class="b-person"><div class="b-person__img" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.5"></circle><path d="M5 20a7 7 0 0 1 14 0"></path></svg></div><div><p class="b-person__name">Janek Melnik</p><p class="b-person__role">Tehnikajuht</p><p class="b-person__ch"><a href="tel:+37258859518"><svg class="b-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"></path></svg>+372 5885 9518</a><a href="mailto:janek.melnik@grk.ee"><svg class="b-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>janek.melnik@grk.ee</a></p></div></div>
+    <div class="b-person"><div class="b-person__img" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.5"></circle><path d="M5 20a7 7 0 0 1 14 0"></path></svg></div><div><p class="b-person__name">Tiit Roben</p><p class="b-person__role">Tegevjuht</p><p class="b-person__ch"><a href="tel:+37256805407"><svg class="b-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"></path></svg>+372 5680 5407</a><a href="mailto:tiit.roben@grk.ee"><svg class="b-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>tiit.roben@grk.ee</a></p></div></div>
+  </div>
+  <p style="margin-top: 32px;"><a class="b-link" href="kontaktisikud.html">Kõik kontaktisikud</a></p>
+</div></section>
+
+<section class="hf-edge hf-edge--dark" id="toihin">
+  <div class="tx">
+    <h2 class="hf-h2">Tule tööle GRK-sse</h2>
+    <p class="hf-lead">Rail Baltica ja raudteede elektrifitseerimine vajavad insenere, töödejuhatajaid ja oskustöölisi. Sinu töö jääb näha aastakümneteks.</p>
+    <div class="acts acts--stack"><a class="b-btn b-btn--secondary" href="karjaar.html#toopakkumised">Tööpakkumised</a><ul class="hf-linklist"><li><a href="karjaar.html">Karjäär GRK-s</a></li><li><a href="karjaar.html#kontakt">Räägi enne personalijuhiga</a></li></ul></div>
+  </div>
+  <div class="ph"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="GRK töötajad ehitusplatsil"></div>
+</section>
+
+<footer class="b-footer hf-foot">
+  <div class="hf-foot__top">
+    <div class="hf-foot__brand">
+      <a class="hf-foot__logo" href="index.html"><img class="b-footer__logo" src="assets/dd89f49e86320a5c7298b6a8f8e527bf.svg" alt="GRK" width="96" height="72"></a>
+      <p class="hf-foot__tag">Ehitame taristut Eestis, Soomes ja Rootsis.</p>
+      <p class="hf-foot__tel">Üldtelefon <a href="tel:+3727333250">+372 733 3250</a></p>
+      <div class="hf-foot__acts"><a class="b-btn" href="kontakt.html">Kontakt</a><a class="hf-foot__more" href="paring.html">Kirjelda oma projekti</a></div>
+    </div>
+    <nav class="hf-foot__nav" aria-label="Jaluse menüü">
+      <div><h2 class="hf-foot__h"><a href="teenused.html">Teenused</a></h2><ul>
+        <li><a href="teedeehitus.html">Teedeehitus</a></li><li><a href="sillad.html">Sillad ja viaduktid</a></li><li><a href="raudtee.html">Raudtee-ehitus</a></li><li><a href="elektrifitseerimine.html">Raudtee elektrifitseerimine</a></li>
+      </ul></div>
+      <div><h2 class="hf-foot__h">Projektid</h2><ul>
+        <li><a href="rail-baltica.html">Rail Baltica</a></li><li><a href="referentsid.html">Referentsid</a></li><li><a href="uudised.html">Uudised</a></li>
+      </ul></div>
+      <div><h2 class="hf-foot__h"><a href="grk-eesti.html">Ettevõte</a></h2><ul>
+        <li><a href="grk-eesti.html">GRK Eesti</a></li><li><a href="grk-eesti.html#tunnustused">Tunnustused ja sertifikaadid</a></li><li><a href="tyhja.html?s=Kestlikkus">Kestlikkus</a></li><li><a href="karjaar.html">Karjäär</a></li><li><a class="hf-foot__ext" href="https://ollirimpilainen.github.io/grk-lofi-proto/">Kontsern</a></li><li><a class="hf-foot__ext" href="tyhja.html?s=Investorid">Investorid</a></li>
+      </ul></div>
+      <div><h2 class="hf-foot__h"><a href="kontakt.html">Kontakt</a></h2><ul>
+        <li><a href="kontaktisikud.html">Kontaktisikud</a></li><li><a href="kontakt.html#arveldus">Arveldus</a></li><li><a href="tyhja.html?s=Teavituskanal">Teavituskanal</a></li><li><a class="hf-foot__ext" href="tyhja.html?s=A-Kaabel">A-Kaabel</a></li>
+      </ul></div>
+    </nav>
+  </div>
+  <div class="hf-foot__bottom">
+    <p class="hf-foot__legal"><span>© 2026 GRK Eesti AS</span><a href="tyhja.html?s=Andmekaitse">Andmekaitse</a><a href="tyhja.html?s=K%C3%BCpsiste%20seaded">Küpsiste seaded</a><a href="tyhja.html?s=Teavituskanal">Teavituskanal</a></p>
+    <nav class="hf-foot__langs" aria-label="Keel"><a href="index.html" aria-current="true">ET</a><a href="https://ollirimpilainen.github.io/grk-lofi-proto/" lang="fi">FI</a><a href="https://ollirimpilainen.github.io/grk-se-lofi-proto/" lang="sv">SV</a><a href="tyhja.html?s=GRK%20Group%20%28English%29" lang="en">EN</a></nav>
+    <ul class="hf-foot__some">
+      <li><a href="#" aria-label="GRK LinkedInis"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3zM9.5 9.75h3.8v1.6h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.55 4.78 5.87v5.48h-4v-4.86c0-1.16-.02-2.65-1.66-2.65-1.66 0-1.92 1.26-1.92 2.57v4.94h-4z"></path></svg></a></li>
+      <li><a href="#" aria-label="GRK Facebookis"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3.1h-3V8.5c0-.9.25-1.5 1.55-1.5h1.6V4.2c-.3-.04-1.24-.12-2.34-.12-2.3 0-3.9 1.4-3.9 4v2.3H7.8v3.1h2.6V21z"></path></svg></a></li>
+      <li><a href="#" aria-label="GRK Instagramis"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.3" cy="6.7" r=".6" fill="currentColor" stroke="none"></circle></svg></a></li>
+    </ul>
+  </div>
+</footer>
+
+
+</div>
+<div class="proto-note" role="status" aria-live="polite"></div>
+<style>
+.proto-note{position:fixed;left:50%;bottom:24px;z-index:100;transform:translate(-50%,16px);max-width:min(520px,calc(100% - 32px));padding:14px 20px;background:#252d32;color:#f4f5f6;font:400 15px/22px "Lofi Sans",Archivo,Arial,sans-serif;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s}
+.proto-note.is-on{opacity:1;transform:translate(-50%,0)}
+</style>
+<script>
+(function(){var n=document.querySelector('.proto-note'),t;
+function say(m){n.textContent=m;n.classList.add('is-on');clearTimeout(t);t=setTimeout(function(){n.classList.remove('is-on')},2600)}
+document.addEventListener('click',function(e){var a=e.target.closest('a[href="#"]');if(a){e.preventDefault();say('See funktsioon ei ole prototüübis kasutusel.')}
+var b=e.target.closest('button[type="button"],button:not([type])');if(b&&b.closest('form')){e.preventDefault();say('Vorm ei saada prototüübis andmeid.')}});
+document.addEventListener('submit',function(e){e.preventDefault();say('Vorm ei saada prototüübis andmeid.')});
+var st=document.querySelector('.b-stick');if(st){document.documentElement.classList.add('js-stick');var yh=document.getElementById('yhteyshenkilot'),ft=document.querySelector('footer');
+function chk(){var vh=innerHeight,on=scrollY>vh*0.9;[yh,ft].forEach(function(el){if(el){var r=el.getBoundingClientRect();if(r.top<vh&&r.bottom>0)on=false}});st.classList.toggle('is-on',on)}
+addEventListener('scroll',chk,{passive:true});addEventListener('resize',chk);chk()}
+})();
+</script>
+<script src="assets/nav.js"></script>
+</body>
+</html>

@@ -1767,8 +1767,9 @@ a.hf-sm__ref:hover b{text-decoration:underline;text-decoration-color:var(--accen
 
 /* ---------- Kuvat paikkamerkeiksi: kuva piiloon, pinta + ohut kuvaikoni */
 .lofi :is(.ph, .b-media, .hf-edge .ph, .t3__p) {
-  background-color: var(--surface);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='none' stroke='%23b4bbc0' stroke-width='1.5'%3E%3Crect x='6' y='10' width='36' height='28'/%3E%3Ccircle cx='17' cy='20' r='3.5'/%3E%3Cpath d='M6 34l11-10 8 7 6-5 11 9'/%3E%3C/svg%3E");
+  /* 4.11.: kuvapaikalla oma, tummempi harmaa, ettei se sekoitu harmaisiin osiotaustoihin (--surface, --surface-2) */
+  background-color: #d2d8dc !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='none' stroke='%23939ea5' stroke-width='1.5'%3E%3Crect x='6' y='10' width='36' height='28'/%3E%3Ccircle cx='17' cy='20' r='3.5'/%3E%3Cpath d='M6 34l11-10 8 7 6-5 11 9'/%3E%3C/svg%3E");
   background-repeat: no-repeat; background-position: center; background-size: 48px;
 }
 .lofi :is(.ph, .b-media, .t3__p) > img:not(.hf-oldico) { opacity: 0; }
@@ -1924,7 +1925,7 @@ a.hf-sm__ref:hover b{text-decoration:underline;text-decoration-color:var(--accen
 .pk-person .b-person{margin:0 0 20px}
 .pk-ch{display:grid;gap:10px;margin:0 0 24px}
 .pk-ch a{display:inline-flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none}
-.pk-ch .pk-tel{font:900 22px/28px var(--font-head)}
+.pk-ch .pk-tel{font:inherit} /* 3.11. Olli: puhelin samalla fontilla kuin sähköposti */
 .pk-ch a:hover{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:5px}
 @media (max-width:900px){.pk,.pk-ref{grid-template-columns:1fr}.pk{gap:32px}.pk-facts{grid-template-columns:1fr;gap:16px}.pk-ref .ph{min-height:220px}.pk-person{position:static}}
 /* Yrityssivujen dokumenttitaulukko ja turvallisuuslohko 28.10. (Laatu ja turvallisuus, Vastuullisuus) */
@@ -2173,3 +2174,38 @@ a.hf-sm__ref:hover b{text-decoration:underline;text-decoration-color:var(--accen
 .km-key{flex-wrap:wrap}
 .km-pin--vo,.km-pin--asf,.km-pin--kivi{width:8px;height:8px;margin:-4px 0 0 -4px;box-shadow:0 0 0 1.5px #fff}
 .km-pin--vo{background:#2f8a5a}.km-pin--asf{background:#5b6b7a}.km-pin--kivi{background:#2f6db5}
+
+/* ===== Sosiaalinen todiste 3.11.2026 (Olli): tilaajarivi ja sitaatti ilman kuvaa ===== */
+.b-logos{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:12px;margin:40px 0 0;padding:0;list-style:none}
+.b-logos li{display:grid;place-items:center;min-height:88px;padding:16px;border:1px solid var(--line-strong);background:#fff;font:700 16px/24px var(--font-sans);color:var(--ink-2-strong);text-align:center}
+.b-quote.b-quote--plain{grid-template-columns:minmax(0,1fr);max-width:960px;margin:48px 0 0}
+@media (max-width:600px){ .b-logos{grid-template-columns:repeat(2,minmax(0,1fr))} .b-quote blockquote{font-size:22px;line-height:28px} }
+
+/* Palvelukortti 3.11. (Olli, variantti e, PRJ-322): otsikko ja ingressi; lista, kohteet (kolmen sarakkeen ruudukko, enintään 3, Kaikki kohteet)
+   ja yhden rivin yhteyspalkki (Töihin meille -sivun ura-ask-lohko) ingressin linjassa. 0 kohdetta = osio pois, asiantuntijalla ei kuvaa. */
+.vg-mx .hf-mx__i>summary{grid-template-columns:80px minmax(0,1fr) 56px;align-items:start}
+.vg-mx .hf-mx__i>summary .hf-mx__x{margin-top:-6px}
+.vg-mx .hf-mx__b{padding:8px 0 72px}
+.vk{display:grid;grid-template-columns:minmax(0,1fr);gap:48px;margin-left:112px}
+.vk-facts{display:grid;gap:10px;margin:0;padding:0;list-style:none;max-width:768px}
+.vk-facts li{position:relative;padding-left:20px;font-size:18px;line-height:28px;color:var(--ink)}
+.vk-facts li::before{content:"";position:absolute;left:0;top:11px;width:6px;height:6px;background:var(--accent)}
+.vk-facts b{font-weight:700}
+.vk-more{margin:16px 0 0;font-size:16px;line-height:24px;color:var(--ink-2-strong)}
+.vk-refs-h{display:flex;justify-content:space-between;align-items:baseline;gap:24px;margin:0 0 20px}
+.vk-refs-h .pk-label{margin:0}
+.vk-refs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;align-items:start}
+.vk .ve-card h4{font:900 22px/28px var(--font-head)}
+.vk .ve-card p:not(.meta){margin:8px 0 0;font-size:16px;line-height:24px;color:var(--ink-2-strong)}
+.vk .ura-ask{display:flex;align-items:center;gap:8px 24px;margin:-8px 0 0;background:var(--surface-2);font-size:16px;line-height:24px;color:var(--ink-2-strong)}
+.vk .ura-ask b{color:var(--ink);font-weight:700}
+.vk .ura-ask a{display:inline-flex;align-items:center;gap:8px;font-weight:700;color:var(--ink);text-decoration:none}
+.vk .ura-ask a:hover{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:4px}
+.vk .ura-ask .b-ico{width:20px;height:20px}
+.vk-cta{flex-wrap:nowrap;padding:12px 12px 12px 24px;white-space:nowrap}
+.vk-cta__q{color:var(--ink);font-weight:700}
+.vk-cta__who{min-width:0;overflow:hidden;text-overflow:ellipsis}
+.vk-cta>a,.vk-cta>span:first-child{flex:none}
+.vk .ura-ask a.vk-cta__btn{margin-left:auto;color:var(--white);gap:0}
+.vk .ura-ask a.vk-cta__btn:hover{text-decoration:none}
+@media (max-width:900px){.vg-mx .hf-mx__i>summary{grid-template-columns:40px minmax(0,1fr) 44px}.vk{margin-left:0}.vk-refs{grid-template-columns:1fr}.vk-cta{flex-wrap:wrap;white-space:normal}.vk .ura-ask a.vk-cta__btn{margin-left:0}}

@@ -6,7 +6,24 @@ Staattiset HTML-sivut, ei build-vaihetta. Julkaisupeili esittelyä varten, ei n�
 
 ## Sivut
 
-Avaleht, Teenused, Teedeehitus, Sillad ja viaduktid, Raudtee-ehitus, Raudtee elektrifitseerimine, Rail Baltica (hankeleht), Referentsid, Uudised, GRK Eesti, Karjäär, Tööpakkumised ja Kontakt.
+| Sivu | Tiedosto | Polku sivustolla |
+|---|---|---|
+| Avaleht | index.html | / |
+| Teenused | teenused.html | /teenused/ |
+| Teedeehitus | teedeehitus.html | /teenused/teedeehitus/ |
+| Sillad ja viaduktid | sillad.html | /teenused/sillad/ |
+| Raudtee-ehitus | raudtee.html | /teenused/raudtee-ehitus/ |
+| Raudtee elektrifitseerimine | elektrifitseerimine.html | /teenused/elektrifitseerimine/ |
+| Rail Baltica (projektileht) | rail-baltica.html | /referentsid/rail-baltica/ |
+| Referentsid | referentsid.html | /referentsid/ |
+| Uudised | uudised.html | /uudised/ |
+| GRK Eesti | grk-eesti.html | /ettevote/ |
+| Karjäär (sisältää tööpakkumised, #toopakkumised) | karjaar.html | /karjaar/ |
+| Kontakt | kontakt.html | /kontakt/ |
+| Kontaktisikud | kontaktisikud.html | /kontakt/kontaktisikud/ |
+| Kirjelda oma projekti | paring.html | /kontakt/paring/ |
+
+Erillinen Tööpakkumised-sivu on yhdistetty Karjääriin (4.11.2026); vanha osoite toopakkumised.html ohjaa osioon karjaar.html#toopakkumised. Valikko noudattaa kankaan EE-Navigaatio-karttaa.
 
 Linkki sivulle, jota ei vielä ole, avaa tyhjän sivun sivun nimellä. Toiminnot (haku, lataukset) näyttävät ilmoituksen. Lomakkeet eivät lähetä tietoja. Yhteyshenkilöt ovat grk.fi/ee:n oikeat henkilöt (luettu 2.11.2026).
 

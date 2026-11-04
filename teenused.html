@@ -17,34 +17,20 @@ a{color:#3f4c55}a:hover{color:#252d32}
 .hf-hero>.b-crumbs{position:absolute;z-index:2;top:32px;left:0;right:0;margin:0;padding:0 80px;color:rgba(255,255,255,.85);text-shadow:0 1px 8px rgba(0,0,0,.45)}
 .hf-hero>.b-crumbs a{color:#fff;text-decoration-color:rgba(255,255,255,.5)}
 @media (max-width:900px){.hf-hero>.b-crumbs{padding:0 20px;top:20px}}
-#miksi-grk .b-why__num{white-space:nowrap}
-#miksi-grk.b-why{position:relative;overflow:hidden;background:#252d32}
-#miksi-grk .b-head .b-body{color:#e9ebec!important}
-#miksi-grk .b-why__label{border-bottom-color:rgba(255,255,255,.22)}
-#miksi-grk .b-why__text{color:#d3d8db}
-#miksi-grk .b-why__title::before{content:"";display:block;width:32px;height:4px;margin-bottom:16px;background:var(--accent)}
-#miksi-grk .b-why__certs{border-top-color:rgba(255,255,255,.22)}
-#miksi-grk .b-why__certs-label{color:var(--accent)}
-#miksi-grk .b-why__cert{display:inline-flex;align-items:center;gap:8px}
-#miksi-grk .b-why__cert::before{content:"";width:8px;height:8px;background:var(--accent)}
 .b-svccard .ph{position:relative}
 .b-svccard .ph .b-tag{position:absolute;left:0;bottom:0;display:inline-flex;align-items:center;gap:8px;margin:0;padding:8px 14px 8px 12px;border:0;border-radius:0;background:var(--surface-dark);color:#fff;font:700 12px/16px var(--font-sans);letter-spacing:.08em;text-transform:uppercase}
 .b-svccard .ph .b-tag::before{content:"";width:8px;height:8px;background:var(--accent)}
-.se-dia{display:grid;justify-items:center;align-content:center;gap:0;min-height:300px}
-.se-dia>i{display:block;width:2px;height:28px;background:var(--ink-2)}
-.se-dia__team{display:grid;justify-items:center;gap:12px;padding:32px 40px;outline:2px dashed var(--accent);outline-offset:-8px}
-.se-dia__box{display:inline-block;min-width:220px;padding:12px 18px;border:1.5px solid var(--ink);background:#fff;font:700 18px/24px var(--font-sans);color:var(--ink);text-align:center}
-.se-dia__box--grk{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
-.se-dia__cap{margin:24px 0 0;font-size:14px;line-height:20px;color:var(--ink-2-strong);text-align:center}
-.b-svcmap__pin--sub span{opacity:0;transform:translateY(4px);transition:opacity .15s,transform .15s}
-.b-svcmap__pin--sub:hover span,.b-svcmap__pin--sub:focus-visible span{opacity:1;transform:none}
-#miksi-grk .b-why__grid{grid-template-columns:repeat(4,minmax(0,1fr));column-gap:40px}
-.hf #miksi-grk .b-why__num{font-size:72px;line-height:1}
-#miksi-grk.b-why{position:relative;overflow:hidden}
-#miksi-grk>.vx-bg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
-#miksi-grk>.b-inner{position:relative;z-index:1}
-#miksi-grk.b-why{background:#252d32}
-.b-svcmap__index .b-tag{display:inline-flex;align-items:center;gap:6px;padding:0;border:0;border-radius:0;background:none;color:var(--ink-2-strong);font:700 11px/16px var(--font-sans);letter-spacing:.1em;text-transform:uppercase}
+.pa-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:56px 40px;padding-top:40px;border-top:1px solid var(--line)}
+.pa{display:flex;flex-direction:column;align-items:flex-start}.pa ul{width:100%;margin:0;padding:0;list-style:none}
+.pa-ic{display:block;width:88px;height:88px;margin:-10px 0 8px -12px}
+.pa h3{margin:0;font:900 22px/28px var(--font-head)}.pa h3 a{color:var(--ink);text-decoration:none}
+.pa .b-tag{display:inline-flex;align-items:center;gap:6px;margin:10px 0 12px;padding:0;border:0;background:none;color:var(--ink-2-strong);font:700 12px/16px var(--font-sans);letter-spacing:.1em;text-transform:uppercase}
+.pa .b-tag::before{content:"";width:6px;height:6px;background:var(--accent)}
+.pa__d{margin:0 0 16px;font-size:16px;line-height:24px;color:var(--ink-2-strong)}
+.pa li{border-top:1px solid var(--line)}
+.pa li a{display:flex;justify-content:space-between;gap:8px;padding:10px 0;font-size:16px;line-height:24px;color:var(--ink);text-decoration:none}
+.pa li a::after{content:"";flex:none;width:7px;height:7px;border:solid var(--accent);border-width:2px 2px 0 0;transform:translateY(8px) rotate(45deg);margin-right:4px}
+.b-svcmap__index .b-tag{display:inline-flex;align-items:center;gap:6px;padding:0;border:0;border-radius:0;background:none;color:var(--ink-2-strong);font:700 12px/16px var(--font-sans);letter-spacing:.1em;text-transform:uppercase}
 .b-svcmap__index .b-tag::before{content:"";width:6px;height:6px;background:var(--accent)}
 .b-svcmap--leads .b-svcmap__index--row h3{display:block}
 .b-svcmap--leads .b-svcmap__index--row h3 .b-svcmap__no{display:block;margin:6px 0 16px 6px}
@@ -55,22 +41,26 @@ a{color:#3f4c55}a:hover{color:#252d32}
 .b-svcmap__index li a:hover::after{transform:translate(3px,-2px) rotate(45deg)}
 .b-svcmap__index li{border-top:1px solid var(--line)}
 .b-svcmap__index li a{padding:8px 0}
-.t3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;height:560px}
-.t3__p{position:relative;min-width:0;overflow:hidden;color:#fff;text-decoration:none}
-.t3__p img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s}
-.t3__p:hover img,.t3__p:focus-visible img{transform:scale(1.04)}
-.t3__p:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.t3__p::after{content:"";position:absolute;inset:auto 0 0;height:42%;background:linear-gradient(0deg,rgba(22,28,32,.88) 0,rgba(22,28,32,.6) 40%,rgba(22,28,32,0))}
-.hf .t3__p img{filter:none}
-.t3__c{position:absolute;z-index:1;left:28px;right:28px;bottom:28px;display:grid;gap:10px}
-.t3__c h3{margin:0;font:900 32px/36px var(--font-head)}
-.t3__c h3::after{content:"";display:inline-block;width:10px;height:10px;margin-left:12px;border:solid var(--accent);border-width:3px 3px 0 0;transform:translateY(-4px) rotate(45deg)}
-.t3__c p{margin:0;font-size:16px;line-height:24px;color:#d3d8db;max-width:40ch}
-.t3__c>p{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:none}
-@media (max-width:900px){.t3{grid-template-columns:1fr;height:auto}.t3__p{height:420px}}
-.hf-mx__i>summary{grid-template-columns:80px minmax(0,1fr) auto 56px}
-.hf-mx__ic{display:grid;place-items:center;width:80px;height:80px}
-.hf-mx__ic img{width:80px;height:80px;display:block}
+.hf .en-co__num b,.hf .b-svcmap__pin span{font-size:12px;line-height:16px}
+/* Palvelukartta 28.10. (Olli: "vertikaaliset viivat samalla etäisyydellä", ei merkkejä keskelle nurmea): kuva skaalataan niin,
+   että vyöhykkeiden väli (15,05 % kuvasta) on sama kuin hakemiston sarakkeiden väli, ja siirretään niin, että sarakkeen piste osuu
+   vyöhykkeen samaan kohtaan. Merkit ovat laatan etureunalla vyöhykkeensä kohteen edessä; viiva laskeutuu suoraan sarakkeen pisteeseen. */
+@media (min-width:901px){
+.b-svcmap--tasa .b-svcmap__fig{width:calc((100cqw + 40px) * 1.10749);max-width:none;margin-left:calc(12px - (100cqw + 40px) * .0786)}
+.b-svcmap--tasa{grid-template-columns:minmax(0,1fr)}
+.b-svcmap--tasa .b-svcmap__index--row{width:100cqw;max-width:100cqw}
+.b-svcmap--tasa .b-svcmap__lead::after,.b-svcmap--tasa .b-svcmap__lead i{display:none}
+.b-svcmap--tasa .b-svcmap__lead::before{left:calc(var(--c) * (100cqw + 40px) / 6 + 11px);top:calc(var(--y) / 100 * (100cqw + 40px) * .47944);height:calc((100cqw + 40px) * .47944 * (1 - var(--y) / 100) + 71px);border-left-width:2px}
+}
+/* Palvelut-hub 28.10.: ei herokuvaa, palvelualueet ensimmäisessä näkymässä */
+.pv-head{display:grid;gap:20px;padding:24px 80px 48px}
+.pv-head .b-h1{margin:0}
+.pv-head .b-lead{margin:0;max-width:760px}
+.pv-head .b-btns{margin-top:12px}
+#palvelut{padding-top:0}
+.pv-map .b-svcmap__index--row > section > ul{display:none}
+.pv-map .b-head{margin-bottom:48px}
+@media (max-width:900px){.pv-head{padding:24px 20px 40px}}
 /* Taste 22.10.: osio-H2 40 px, hierarkia painolla */
 .hf .b-h2{font-size:40px;line-height:48px;letter-spacing:-.01em}
 .tm .b-panel__fig{padding:0!important;background:none!important}
@@ -86,13 +76,29 @@ a{color:#3f4c55}a:hover{color:#252d32}
 .hf .b-lead,.hf .lead{font-size:22px;line-height:34px}
 .hf .b-head .b-body{font-size:18px;line-height:28px}
 .hf .hf-card .meta,.hf .hf-feature .meta,.hf .hf-pins__pin{font-size:14px;line-height:20px}
-.hf .en-co__num b,.hf .b-svcmap__pin span{font-size:12px;line-height:16px}
 .hf .hf-card p:not(.meta){font-size:16px;line-height:24px}
-/* 28.10. hierarkia: ryhmäotsikko (H3 28/33) on suurempi kuin ryhmän kohta (H4 22/28) */
-.hf .hf-work__group{font-size:28px;line-height:33px}
-.hf .hf-mx__t h3{font-size:22px;line-height:28px}
-.hf .hf-work__group{margin:0;padding:0 0 16px;border-bottom:2px solid var(--ink)}
-.hf .hf-work__group:not(:first-child){margin-top:96px}
+.pa li a.pa-ext::after{display:none}
+/* 4.11.: neljä palvelua 2 x 2, ei yhtä yksinään toisella rivillä */
+.ee .pa-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:900px){.ee .pa-grid{grid-template-columns:1fr}}
+/* Palvelut-hub 28.10.: hanketyypit × palvelualueet ja kevyt kehotus (ei yhteyshenkilöitä eikä lomaketta) */
+.ht{border-top:2px solid var(--ink)}
+.ht-row{display:grid;grid-template-columns:minmax(0,5fr) repeat(6,minmax(0,1fr));align-items:center;column-gap:16px;padding:24px 0;border-bottom:1px solid var(--line)}
+.ht-row--head{padding:14px 0;font:700 12px/16px var(--font-sans);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2-strong)}
+.ht-row--head span:not(:first-child){text-align:center;hyphens:manual;overflow-wrap:normal}
+.ht-n h3{margin:0;font:900 22px/28px var(--font-head)}
+.ht-n h3 a{color:var(--ink);text-decoration:none}
+.ht-n h3 a:hover{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:5px}
+.ht-n p{margin:6px 0 0;font-size:16px;line-height:24px;color:var(--ink-2-strong)}
+.ht-n .ht-ref{font-size:14px;line-height:20px}
+.ht-c{justify-self:center;width:14px;height:14px;border-radius:50%;border:1.5px solid var(--line-strong)}
+.ht-c.on{border-color:var(--accent);background:var(--accent)}
+.ht-foot{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 24px;margin:24px 0 0;font-size:16px;line-height:24px;color:var(--ink-2-strong)}
+.pv-cta{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:48px;align-items:center}
+.pv-cta .b-h2{margin:0 0 12px}
+.pv-cta .b-body{margin:0;font-size:18px;line-height:28px}
+.pv-cta .b-btns{justify-content:flex-end;align-items:center;gap:32px}
+@media (max-width:900px){.ht-row{grid-template-columns:minmax(0,1fr) repeat(6,22px);column-gap:8px}.ht-row--head span:not(:first-child){writing-mode:vertical-rl;transform:rotate(180deg);justify-self:center}.pv-cta{grid-template-columns:1fr}.pv-cta .b-btns{justify-content:flex-start}}
 @media (max-width:900px){
   .km-c{grid-template-columns:1fr!important;gap:32px!important}
   .b-why__grid,#miksi-grk .b-why__grid{grid-template-columns:1fr 1fr!important;row-gap:40px}
@@ -127,11 +133,13 @@ a{color:#3f4c55}a:hover{color:#252d32}
 <header class="b-pagehead"><div>
   <h1 class="b-h1">Teenused teedest raudtee elektrifitseerimiseni</h1>
   <p class="b-lead">Neli valdkonda, mida saab ühendada samas projektis. Vali teenus või kirjelda oma projekti, siis võtab õige spetsialist ühendust.</p>
-  <div class="b-btns"><a class="b-btn" href="kontakt.html#vorm">Kirjelda oma projekti</a></div>
+  <div class="b-btns"><a class="b-btn" href="paring.html">Kirjelda oma projekti</a></div>
 </div></header>
-<section class="b-section" id="tjanster"><div class="b-inner">
-  <h2 class="sr-only">Teenused</h2><div class="pa-grid"><section class="pa" id="pa-teedeehitus"><h3><a href="teedeehitus.html">Teedeehitus</a></h3><span class="b-tag">Teed ja rajatised</span><p class="pa__d">Teed, liiklussõlmed ja kergliiklusteed.</p><ul><li><a href="teedeehitus.html#teed">Teede ja tänavate ehitus</a></li><li><a href="teedeehitus.html#liiklussolmed">Liiklussõlmed</a></li><li><a href="teedeehitus.html#katendid">Katendid ja katendiremont</a></li><li><a href="teedeehitus.html#kergliiklus">Kergliiklusteed ja tunnelid</a></li><li><a href="teedeehitus.html#geodeesia">3D ja geodeesia</a></li></ul></section><section class="pa" id="pa-sillad"><h3><a href="sillad.html">Sillad ja viaduktid</a></h3><span class="b-tag">Insenerehitus</span><p class="pa__d">Maantee- ja raudteesillad, viaduktid ja ökoduktid.</p><ul><li><a href="sillad.html#maanteesillad">Maanteesillad ja viaduktid</a></li><li><a href="sillad.html#raudteesillad">Raudteesillad</a></li><li><a href="sillad.html#okoduktid">Ökoduktid</a></li><li><a href="sillad.html#jalakaijate-sillad">Jalakäijate sillad ja tunnelid</a></li><li><a href="sillad.html#vundeerimine">Vundeerimine</a></li></ul></section><section class="pa" id="pa-raudtee"><h3><a href="raudtee.html">Raudtee-ehitus</a></h3><span class="b-tag">Rööbasteed</span><p class="pa__d">Raudteed, jaamad, turvangusüsteemid ja Rail Baltica.</p><ul><li><a href="raudtee.html#pealisehitus">Raudtee ala- ja pealisehitus</a></li><li><a href="raudtee.html#jaamad">Jaamad, peatused ja platvormid</a></li><li><a href="raudtee.html#ristumised">Ristumised ja müratõkked</a></li><li><a href="raudtee.html#turvangusysteemid">Turvangusüsteemid</a></li><li><a href="raudtee.html#korrashoid">Korrashoid</a></li></ul></section><section class="pa" id="pa-elektrifitseerimine"><h3><a href="elektrifitseerimine.html">Raudtee elektrifitseerimine</a></h3><span class="b-tag">Rööbasteed</span><p class="pa__d">Kontaktvõrk ja veoalajaamad projekteerimisest käitamiseni.</p><ul><li><a href="elektrifitseerimine.html#kontaktvork">Kontaktvõrk</a></li><li><a href="elektrifitseerimine.html#veoalajaamad">Veoalajaamad</a></li><li><a href="elektrifitseerimine.html#kaitamine">Käitamine ja hooldus</a></li><li><a href="elektrifitseerimine.html#projekteerimine">Projekteerimine</a></li></ul></section></div>
+
+<section class="b-section" id="palvelut"><div class="b-inner">
+  <div class="pa-grid"><section class="pa" id="pa-teedeehitus"><svg class="pa-ic" aria-hidden="true" viewBox="-10 -10 68 68" xmlns="http://www.w3.org/2000/svg"><path d="M7 44 C11 31 15.5 18 19.5 8 M41 44 C37 31 32.5 18 28.5 8 M10 8 H38" fill="none" stroke="#3f4c55" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 10 H24.000000000000004 A0.65 0.65 0 0 1 24.650000000000002 10.65 V13.35 A0.65 0.65 0 0 1 24.000000000000004 14 H24 A0.65 0.65 0 0 1 23.35 13.35 V10.65 A0.65 0.65 0 0 1 24 10 Z M23.9 18 H24.099999999999998 A1 1 0 0 1 25.099999999999998 19 V23 A1 1 0 0 1 24.099999999999998 24 H23.9 A1 1 0 0 1 22.9 23 V19 A1 1 0 0 1 23.9 18 Z M23.7 29 H24.3 A1.4 1.4 0 0 1 25.7 30.4 V36.6 A1.4 1.4 0 0 1 24.3 38 H23.7 A1.4 1.4 0 0 1 22.3 36.6 V30.4 A1.4 1.4 0 0 1 23.7 29 Z " fill="#f06800"/></svg><h3><a href="teedeehitus.html">Teedeehitus</a></h3><span class="b-tag">Teed ja rajatised</span><p class="pa__d">Teed, liiklussõlmed ja kergliiklusteed.</p><ul><li><a href="teedeehitus.html#teed">Teede ja tänavate ehitus</a></li><li><a href="teedeehitus.html#liiklussolmed">Liiklussõlmed</a></li><li><a href="teedeehitus.html#katendid">Katendid ja katendiremont</a></li><li><a href="teedeehitus.html#kergliiklus">Kergliiklusteed ja tunnelid</a></li><li><a href="teedeehitus.html#geodeesia">3D ja geodeesia</a></li></ul></section><section class="pa" id="pa-sillad"><svg class="pa-ic" aria-hidden="true" viewBox="-10 -10 68 68" xmlns="http://www.w3.org/2000/svg"><path d="M4 19.5 H44 A1 1 0 0 1 45 20.5 V23.5 A1 1 0 0 1 44 24.5 H4 A1 1 0 0 1 3 23.5 V20.5 A1 1 0 0 1 4 19.5 Z " fill="#f06800"/><path d="M4 19.5 H44 A1 1 0 0 1 45 20.5 V23.5 A1 1 0 0 1 44 24.5 H4 A1 1 0 0 1 3 23.5 V20.5 A1 1 0 0 1 4 19.5 Z " fill="none" stroke="#3f4c55" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 13 H45 M8 13 V19.5 M15 13 V19.5 M22 13 V19.5 M29 13 V19.5 M36 13 V19.5 M43 13 V19.5" fill="none" stroke="#3f4c55" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.5 24.5 C12.5 29 13 34 13 39.5 H19 C19 34 19.5 29 20.5 24.5 M27.5 24.5 C28.5 29 29 34 29 39.5 H35 C35 34 35.5 29 36.5 24.5" fill="none" stroke="#3f4c55" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 39.5 H45" fill="none" stroke="#3f4c55" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 44 C7 42.8 9 42.8 11 44 C13 45.2 15 45.2 17 44 M31 44 C33 42.8 35 42.8 37 44 C39 45.2 41 45.2 43 44" fill="none" stroke="#3f4c55" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/></svg><h3><a href="sillad.html">Sillad ja viaduktid</a></h3><span class="b-tag">Insenerehitus</span><p class="pa__d">Maantee- ja raudteesillad, viaduktid ja ökoduktid.</p><ul><li><a href="sillad.html#maanteesillad">Maanteesillad ja viaduktid</a></li><li><a href="sillad.html#raudteesillad">Raudteesillad</a></li><li><a href="sillad.html#okoduktid">Ökoduktid</a></li><li><a href="sillad.html#jalakaijate-sillad">Jalakäijate sillad ja tunnelid</a></li><li><a href="sillad.html#vundeerimine">Vundeerimine</a></li></ul></section><section class="pa" id="pa-raudtee"><svg class="pa-ic" aria-hidden="true" viewBox="-10 -10 68 68" xmlns="http://www.w3.org/2000/svg"><path d="M18 6.5 L24 2.5 L30 6.5" fill="none" stroke="#3f4c55" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 6.5 H31 A5 5 0 0 1 36 11.5 V30.5 A5 5 0 0 1 31 35.5 H17 A5 5 0 0 1 12 30.5 V11.5 A5 5 0 0 1 17 6.5 Z " fill="none" stroke="#3f4c55" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.5 10 H30.5 A2 2 0 0 1 32.5 12 V17 A2 2 0 0 1 30.5 19 H17.5 A2 2 0 0 1 15.5 17 V12 A2 2 0 0 1 17.5 10 Z " fill="none" stroke="#3f4c55" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 22.5 H36 V26 H12 Z" fill="#f06800"/><path d="M12 22.5 H36 V26 H12 Z" fill="none" stroke="#3f4c55" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 30.5 a1.5 1.5 0 1 0 3 0 a1.5 1.5 0 1 0 -3 0 M29 30.5 a1.5 1.5 0 1 0 3 0 a1.5 1.5 0 1 0 -3 0 " fill="#3f4c55"/><path d="M15 35.5 V38.5 M33 35.5 V38.5" fill="none" stroke="#3f4c55" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 38.5 L8 45 M35 38.5 L40 45 M10.5 41.5 H37.5" fill="none" stroke="#3f4c55" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/></svg><h3><a href="raudtee.html">Raudtee-ehitus</a></h3><span class="b-tag">Rööbasteed</span><p class="pa__d">Raudteed, jaamad, turvangusüsteemid ja Rail Baltica.</p><ul><li><a href="raudtee.html#pealisehitus">Raudtee ala- ja pealisehitus</a></li><li><a href="raudtee.html#jaamad">Jaamad, peatused ja platvormid</a></li><li><a href="raudtee.html#ristumised">Ristumised ja müratõkked</a></li><li><a href="raudtee.html#turvangusysteemid">Turvangusüsteemid</a></li><li><a href="raudtee.html#korrashoid">Korrashoid</a></li></ul></section><section class="pa" id="pa-elektrifitseerimine"><svg class="pa-ic" aria-hidden="true" viewBox="-10 -10 68 68" xmlns="http://www.w3.org/2000/svg"><path d="M7 5 H8 A1 1 0 0 1 9 6 V43 A1 1 0 0 1 8 44 H7 A1 1 0 0 1 6 43 V6 A1 1 0 0 1 7 5 Z " fill="none" stroke="#3f4c55" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 8 H22 M9 14 L18 8" fill="none" stroke="#3f4c55" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 8 C28 15.5 38 15.5 46 8" fill="none" stroke="#3f4c55" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 19 H46 M20 8 V19 M26.5 12.6 V19 M33 14.1 V19 M39.5 12.6 V19" fill="none" stroke="#3f4c55" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.25 24 H12.25 A3.25 3.25 0 0 1 15.5 27.25 V32.75 A3.25 3.25 0 0 1 12.25 36 H12.25 A3.25 3.25 0 0 1 9 32.75 V27.25 A3.25 3.25 0 0 1 12.25 24 Z " fill="none" stroke="#3f4c55" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M10.45 27.5 a1.8 1.8 0 1 0 3.6 0 a1.8 1.8 0 1 0 -3.6 0 " fill="#f06800"/><path d="M10.45 27.5 a1.8 1.8 0 1 0 3.6 0 a1.8 1.8 0 1 0 -3.6 0 " fill="none" stroke="#3f4c55" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M10.65 32.5 a1.6 1.6 0 1 0 3.2 0 a1.6 1.6 0 1 0 -3.2 0 " fill="none" stroke="#3f4c55" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.8 37.5 H45.2 A0.8 0.8 0 0 1 46 38.3 V39.2 A0.8 0.8 0 0 1 45.2 40 H12.8 A0.8 0.8 0 0 1 12 39.2 V38.3 A0.8 0.8 0 0 1 12.8 37.5 Z " fill="none" stroke="#3f4c55" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M15.8 40 H19.2 A0.8 0.8 0 0 1 20 40.8 V43.2 A0.8 0.8 0 0 1 19.2 44 H15.8 A0.8 0.8 0 0 1 15 43.2 V40.8 A0.8 0.8 0 0 1 15.8 40 Z M24.8 40 H28.2 A0.8 0.8 0 0 1 29 40.8 V43.2 A0.8 0.8 0 0 1 28.2 44 H24.8 A0.8 0.8 0 0 1 24 43.2 V40.8 A0.8 0.8 0 0 1 24.8 40 Z M33.8 40 H37.2 A0.8 0.8 0 0 1 38 40.8 V43.2 A0.8 0.8 0 0 1 37.2 44 H33.8 A0.8 0.8 0 0 1 33 43.2 V40.8 A0.8 0.8 0 0 1 33.8 40 Z M42.8 40 H45.2 A0.8 0.8 0 0 1 46 40.8 V43.2 A0.8 0.8 0 0 1 45.2 44 H42.8 A0.8 0.8 0 0 1 42 43.2 V40.8 A0.8 0.8 0 0 1 42.8 40 Z " fill="none" stroke="#3f4c55" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 44 H46" fill="none" stroke="#3f4c55" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/></svg><h3><a href="elektrifitseerimine.html">Raudtee elektrifitseerimine</a></h3><span class="b-tag">Rööbasteed</span><p class="pa__d">Kontaktvõrk ja veoalajaamad projekteerimisest käitamiseni.</p><ul><li><a href="elektrifitseerimine.html#kontaktvork">Kontaktvõrk</a></li><li><a href="elektrifitseerimine.html#veoalajaamad">Veoalajaamad</a></li><li><a href="elektrifitseerimine.html#kaitamine">Käitamine ja hooldus</a></li><li><a href="elektrifitseerimine.html#projekteerimine">Projekteerimine</a></li></ul></section></div>
 </div></section>
+
 
 
 <section class="b-section sy" id="suunnittelu"><div class="b-inner">
@@ -143,7 +151,7 @@ a{color:#3f4c55}a:hover{color:#252d32}
     <aside class="sy-person" aria-label="Abi planeerimisel">
       <p class="sy-label">Abi planeerimisel</p>
       <div class="b-person"><div class="b-person__img" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.5"></circle><path d="M5 20a7 7 0 0 1 14 0"></path></svg></div><div><p class="b-person__name">Janek Melnik</p><p class="b-person__role">Tehnikajuht</p><p class="b-person__ch"><a href="tel:+37258859518"><svg class="b-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"></path></svg>+372 5885 9518</a><a href="mailto:janek.melnik@grk.ee"><svg class="b-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>janek.melnik@grk.ee</a></p></div></div>
-      <div class="b-btns"><a class="b-btn" href="tel:+37258859518">Helista spetsialistile</a><a class="b-link" href="kontakt.html#vorm">Saada eskiis</a></div>
+      <div class="b-btns"><a class="b-btn" href="tel:+37258859518">Helista spetsialistile</a><a class="b-link" href="paring.html">Saada eskiis</a></div>
     </aside>
   </div>
   <ul class="sy-ways">
@@ -152,21 +160,23 @@ a{color:#3f4c55}a:hover{color:#252d32}
     <li><h3>Kas meetod sobib?</h3><p>Projekteerijana saad meetodi spetsialistiga üle vaadata enne, kui see läheb projekti.</p></li>
   </ul>
 </div></section>
+
 <section class="hf-edge hf-edge--dark" id="toihin">
   <div class="tx">
     <h2 class="hf-h2">Tule tööle GRK-sse</h2>
     <p class="hf-lead">Rail Baltica ja raudteede elektrifitseerimine vajavad insenere, töödejuhatajaid ja oskustöölisi. Sinu töö jääb näha aastakümneteks.</p>
-    <div class="acts acts--stack"><a class="b-btn b-btn--secondary" href="toopakkumised.html">Tööpakkumised</a><ul class="hf-linklist"><li><a href="karjaar.html">Karjäär GRK-s</a></li><li><a href="karjaar.html#kontakt">Räägi enne personalijuhiga</a></li></ul></div>
+    <div class="acts acts--stack"><a class="b-btn b-btn--secondary" href="karjaar.html#toopakkumised">Tööpakkumised</a><ul class="hf-linklist"><li><a href="karjaar.html">Karjäär GRK-s</a></li><li><a href="karjaar.html#kontakt">Räägi enne personalijuhiga</a></li></ul></div>
   </div>
   <div class="ph"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="GRK töötajad ehitusplatsil"></div>
 </section>
+
 <footer class="b-footer hf-foot">
   <div class="hf-foot__top">
     <div class="hf-foot__brand">
       <a class="hf-foot__logo" href="index.html"><img class="b-footer__logo" src="assets/dd89f49e86320a5c7298b6a8f8e527bf.svg" alt="GRK" width="96" height="72"></a>
       <p class="hf-foot__tag">Ehitame taristut Eestis, Soomes ja Rootsis.</p>
       <p class="hf-foot__tel">Üldtelefon <a href="tel:+3727333250">+372 733 3250</a></p>
-      <div class="hf-foot__acts"><a class="b-btn" href="kontakt.html">Kontakt</a><a class="hf-foot__more" href="kontakt.html#vorm">Kirjelda oma projekti</a></div>
+      <div class="hf-foot__acts"><a class="b-btn" href="kontakt.html">Kontakt</a><a class="hf-foot__more" href="paring.html">Kirjelda oma projekti</a></div>
     </div>
     <nav class="hf-foot__nav" aria-label="Jaluse menüü">
       <div><h2 class="hf-foot__h"><a href="teenused.html">Teenused</a></h2><ul>
@@ -179,7 +189,7 @@ a{color:#3f4c55}a:hover{color:#252d32}
         <li><a href="grk-eesti.html">GRK Eesti</a></li><li><a href="grk-eesti.html#tunnustused">Tunnustused ja sertifikaadid</a></li><li><a href="tyhja.html?s=Kestlikkus">Kestlikkus</a></li><li><a href="karjaar.html">Karjäär</a></li><li><a class="hf-foot__ext" href="https://ollirimpilainen.github.io/grk-lofi-proto/">Kontsern</a></li><li><a class="hf-foot__ext" href="tyhja.html?s=Investorid">Investorid</a></li>
       </ul></div>
       <div><h2 class="hf-foot__h"><a href="kontakt.html">Kontakt</a></h2><ul>
-        <li><a href="kontakt.html#kontaktisikud">Kontaktisikud</a></li><li><a href="kontakt.html#arveldus">Arveldus</a></li><li><a href="tyhja.html?s=Teavituskanal">Teavituskanal</a></li><li><a class="hf-foot__ext" href="tyhja.html?s=A-Kaabel">A-Kaabel</a></li>
+        <li><a href="kontaktisikud.html">Kontaktisikud</a></li><li><a href="kontakt.html#arveldus">Arveldus</a></li><li><a href="tyhja.html?s=Teavituskanal">Teavituskanal</a></li><li><a class="hf-foot__ext" href="tyhja.html?s=A-Kaabel">A-Kaabel</a></li>
       </ul></div>
     </nav>
   </div>
